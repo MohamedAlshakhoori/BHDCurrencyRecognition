@@ -17,7 +17,7 @@ bahraini-currency-recognition/
 │   ├── GeneratingImages.ipynb         # Augmentation pipeline
 │   └── Currency_Recognition_DL.ipynb  # Model training & evaluation
 │
-├── models/                            # Exported model artifacts & metadata
+├── artifacts/                         # Exported model artifacts & metadata
 │   ├── bahrain_currency_model.keras   # Saved Keras classification model
 │   └── class_names.json               # Mapped class label metadata
 │
