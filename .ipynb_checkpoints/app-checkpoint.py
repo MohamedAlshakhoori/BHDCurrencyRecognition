@@ -59,7 +59,7 @@ else:
 if uploaded_file is not None:
     # Display Input Image
     image = Image.open(uploaded_file).convert("RGB")
-    st.image(image, caption="Input Image", use_container_width=True)
+    # st.image(image, caption="Input Image", use_container_width=True)
     
     with st.spinner("Classifying image..."):
         start_time = time.time()
