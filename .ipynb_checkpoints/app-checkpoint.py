@@ -31,13 +31,13 @@ st.write("Upload an image or capture a photo using your camera to classify Bahra
 # Load Model and Class Names (Cached)
 @st.cache_resource
 def load_currency_model():
-    model_path = "bahrain_currency_model.keras"
+    model_path = "artifacts/bahrain_currency_model.keras"
     model = tf.keras.models.load_model(model_path)
     return model
 
 @st.cache_data
 def load_class_names():
-    class_names_path = "class_names.json"
+    class_names_path = "artifacts/class_names.json"
     with open(class_names_path, "r") as f:
         class_names = json.load(f)
     return class_names
